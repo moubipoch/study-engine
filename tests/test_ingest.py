@@ -99,7 +99,7 @@ def test_real_world_names(project, tmp_path):
     assert detect_lecture("week00") == 0 and lecture_tag("week01a", 1) == "L01a"
     assert default_key(tmp_path / "week01b.pdf", "slides", 1) == "L01b-slides"
     assert default_key(tmp_path / "exercise03_discussion_solutions.pdf", "exercise", None) == "exercise03-discussion-solutions"
-    assert default_key(tmp_path / "PTSS_ex01_presentation.pdf", "exercise", None) == "ptss-ex01-presentation"
+    assert default_key(tmp_path / "SIM_ex01_presentation.pdf", "exercise", None) == "sim-ex01-presentation"
     assert default_key(tmp_path / "sheet_4_solution.pdf", "exercise", None) == "ex04-sheet-solution"
     assert detect_type(tmp_path / "PS2.pdf", course) == "exercise"
     assert detect_type(tmp_path / "Homework1 - Part1.pdf", course) == "exercise"
