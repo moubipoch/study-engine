@@ -1,0 +1,26 @@
+slug: example
+name: Example Course
+short: EX             # display / vault name
+folder: Example       # your course folder (under folders_root)
+planner_name: EX      # name in the planner connector (optional)
+ui: {color: "#6366f1", icon: school}
+code: ""              # course number
+active: true
+exam_date:            # YYYY-MM-DD from the official exam plan; leave empty until known (never guessed)
+exam_format: "written 120 min, no aids"
+exam_info:
+  ects: 6
+  grading: "100% session exam"
+  target: "maximum"   # or e.g. "pass with a safe margin"
+  sources: ["course catalogue: performance assessment"]
+priority: 3           # 1..5
+anki_deck: "Uni::Example"
+labels:               # optional: week (and key) for unlabelled files, from their names
+- {match: 'lecture[-_ ]?0?(\d+)', week: '{1}', key: 'L{week:02}-slides'}
+repo_ingest: []       # optional: folders of a course git repo to re-ingest on sync: [{path, key?, no_copy?}]
+style:
+  kind: math+algorithms   # programming | math+algorithms | proofs | control | dynamics | project
+  emphasis: tie the math to algorithms; small runnable checks
+  languages: [python]
+  exercise_kinds: [derive, implement, conceptual, exam-style]
+topics: []

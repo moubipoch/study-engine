@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+dist/
+# never commit course material or personal data
+data/
+courses/
+study.yaml
+!study/templates/**

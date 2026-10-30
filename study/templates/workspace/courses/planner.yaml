@@ -1,0 +1,18 @@
+# Study planner settings. Dates are never assumed: fill them in.
+timezone: Europe/Zurich
+semester_start:              # YYYY-MM-DD, Monday of week 1: recordings and files are named by semester week
+hours_per_day:        # study hours available per weekday
+  mon: 3
+  tue: 3
+  wed: 3
+  thu: 3
+  fri: 3
+  sat: 5
+  sun: 3
+day_start: "09:00"    # earliest study block start
+block_minutes: 90
+blocked_dates: []     # list of YYYY-MM-DD with no study
+winter_break:
+  start:              # YYYY-MM-DD
+  end:                # YYYY-MM-DD
+  hours_per_day: 6

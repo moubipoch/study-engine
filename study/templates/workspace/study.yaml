@@ -1,0 +1,7 @@
+# Workspace settings (this folder holds your courses/ and data/; keep it private).
+student: "a university student"   # who Claude is helping, e.g. "an ETH Zürich MSc CSE student"
+vault: ../StudyVault              # the knowledge vault (Obsidian + git); `study vault init` creates it
+folders_root: ..                  # your own course folders: <folders_root>/<course folder>/Claude …
+coursesync_config: ~/.config/coursesync/coursesync.yaml   # how new material is fetched (see coursesync)
+planner_tools: []                 # optional: MCP tool prefixes of a planner connector (for class attendance)
+label: "exam prep"               # small label under the logo in the GUI
